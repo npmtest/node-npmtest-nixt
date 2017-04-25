@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-nixt/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-nixt/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-nixt/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-nixt/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-nixt/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-nixt/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-nixt/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-nixt/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-nixt/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-nixt/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-nixt/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-nixt/build/coverage.html/index.html)
 
@@ -35,9 +35,36 @@
 ```json
 
 {
-    "name": "nixt",
-    "version": "0.5.0",
+    "author": {
+        "name": "Veselin Todorov"
+    },
+    "bugs": {
+        "url": "https://github.com/vesln/nixt/issues"
+    },
+    "dependencies": {
+        "assertion-error": "~1.0.0",
+        "clone": "^1.0.2",
+        "shell-quote": "^1.4.1",
+        "string": "^3.3.1"
+    },
     "description": "Simple and powerful testing for command-line apps",
+    "devDependencies": {
+        "chai": "*",
+        "hydro": "*",
+        "hydro-bdd": "*",
+        "hydro-chai": "*",
+        "hydro-dot": "*",
+        "prompt": "^0.2.12"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "dist": {
+        "shasum": "243b340b52b5dd3622ee8034bbb5d4ddf347c5f6",
+        "tarball": "https://registry.npmjs.org/nixt/-/nixt-0.5.0.tgz"
+    },
+    "gitHead": "72b49a6e3c42822bad67cc240c844d5d1146e5b6",
+    "homepage": "https://github.com/vesln/nixt",
     "keywords": [
         "testing",
         "test",
@@ -46,34 +73,27 @@
         "command-line apps",
         "command-line applications"
     ],
+    "license": "MIT",
     "main": "index.js",
-    "homepage": "https://github.com/vesln/nixt",
-    "directories": {
-        "test": "test"
-    },
-    "scripts": {
-        "test": "make test"
-    },
+    "maintainers": [
+        {
+            "name": "eush77"
+        },
+        {
+            "name": "vesln"
+        }
+    ],
+    "name": "nixt",
+    "optionalDependencies": {},
     "repository": {
         "type": "git",
         "url": "git://github.com/vesln/nixt.git"
     },
-    "author": "Veselin Todorov <hi@vesln.com>",
-    "license": "MIT",
-    "devDependencies": {
-        "chai": "*",
-        "hydro": "*",
-        "hydro-dot": "*",
-        "hydro-chai": "*",
-        "hydro-bdd": "*",
-        "prompt": "^0.2.12"
+    "scripts": {
+        "test": "make test"
     },
-    "dependencies": {
-        "assertion-error": "~1.0.0",
-        "clone": "^1.0.2",
-        "shell-quote": "^1.4.1",
-        "string": "^3.3.1"
-    }
+    "version": "0.5.0",
+    "bin": {}
 }
 ```
 
